@@ -1,20 +1,34 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+/* Reset de margin e padding */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* Estilo para o Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
 header {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 0;
     text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin-top: 10px;
 }
 
 nav ul li {
@@ -25,17 +39,113 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
-.intro {
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seções */
+section {
     padding: 20px;
     margin: 20px;
-    background-color: white;
+    background-color: #fff;
+    border-radius: 8px;
 }
 
-footer {
+/* Seção de Introdução */
+.intro {
     text-align: center;
-    padding: 10px 0;
+}
+
+.intro h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Destaques */
+.destaques {
+    text-align: center;
+}
+
+.destaques h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.destaques ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.destaques ul li {
+    margin: 10px 0;
+}
+
+.destaques ul li a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.destaques ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Resenhas */
+.resenhas h2,
+.recomendacoes h2,
+.personagens h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.resenhas p,
+.recomendacoes p,
+.personagens p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
     background-color: #4CAF50;
     color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .intro, .destaques {
+        text-align: left;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
 }
