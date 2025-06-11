@@ -149,3 +149,19 @@ footer {
         padding: 15px;
     }
 }
+/* Estilo para as imagens das novels */
+.imagem-novel {
+    max-width: 300px;  /* Limita o tamanho da imagem */
+    margin-right: 20px; /* Espaço à direita */
+    margin-bottom: 20px; /* Espaço inferior */
+    display: inline-block; /* Para que a imagem fique ao lado do texto */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Para garantir que a imagem fique centralizada em telas menores */
+@media (max-width: 768px) {
+    .imagem-novel {
+        display: block;
+        margin: 0 auto 20px; /* Centraliza a imagem em telas menores */
+    }
+}
