@@ -15,7 +15,7 @@ body {
 
 /* Header */
 header {
-    background-color:rgb(4, 69, 73);
+    background-color:rgb(119, 2, 2);
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -61,7 +61,7 @@ section {
 }
 
 .intro h2 {
-    color: #4CAF50;
+    color: #af0202;
     margin-bottom: 10px;
 }
 
@@ -76,7 +76,7 @@ section {
 }
 
 .destaques h2 {
-    color: #4CAF50;
+    color: #af0202;
     margin-bottom: 10px;
 }
 
@@ -90,7 +90,7 @@ section {
 }
 
 .destaques ul li a {
-    color: #4CAF50;
+    color: #af0202;
     text-decoration: none;
     font-size: 1.2em;
 }
@@ -103,7 +103,7 @@ section {
 .resenhas h2,
 .recomendacoes h2,
 .personagens h2 {
-    color: #4CAF50;
+    color: #af0202;
     margin-bottom: 10px;
 }
 
@@ -116,7 +116,7 @@ section {
 
 /* Footer */
 footer {
-    background-color: #4CAF50;
+    background-color: #af0202;
     color: white;
     text-align: center;
     padding: 10px 0;
